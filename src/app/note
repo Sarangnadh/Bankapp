@@ -1,0 +1,121 @@
+
+
+
+                            Angular - Front End Development
+
+
+                                      basic command
+
+            1. to create project - ng new project-name / ng new project-name --routing
+
+            2. to run a project - ng serve / ng serve --open
+
+            3. to create component - ng g c component-name
+
+            4. to create Services - ng g s service-name
+
+            5. to create Directives - ng g d Directive-name
+
+            6. to build Angular application - ng build --prod
+
+
+
+
+
+                                     Basic Concepts
+
+
+            1. Component -to create { html,css,ts file} root component -AppComponent
+
+            2. Module - to add libraries to the project - root module - AppModule
+
+            3. Data Binding - data sharing between html and ts
+
+                3.1 One way Binding
+
+                    3.1.1 component to view
+
+                        3.1.1.1 String Interpolation: syntanx- {{variable-name}}
+
+                        3.1.1.2 Property Binding: [attribute]="variable-name"
+
+                    3.1.2 view to component
+
+                        3.1.2.1 Event Binding- (event)="function-call()"
+
+                        3.1.2.2 Event Binding using $event- (event)="function-call($event)"
+
+                        3.1.2.3 Template referencing variable - syntanx: #variable-name
+
+                3.2 Two way Binding - 
+
+                    3.2 Using ngModel - Import FormsModule in AppModule, 
+                        syntanx: [(ngModel)]="variable-name" If it used in form tag set name attribute
+
+            4. To setup path for a component : defined in App Routing Module
+                syntanx: {path:'',component:componentClassName}
+
+            5. Dependency Injection - to share data between classes
+
+            6. Angular Services - for reuse data 
+
+            7. ngSubmit - to submit entire form syntanx: (ngSubmit)="function-call"
+
+            8. Angular Forms
+
+                8.1 Template Driven Forms - first design html
+
+                8.2 Model Driven Forms - first create model in ts
+
+                    8.2.1 Reactive Forms - Add Validation: Import ReactiveFormsModule
+                            -form group - FormBuilder dependency inject , form array, form control
+
+
+            9. Angular Directives - To manipulate DOM
+
+                9.1 Component Directives
+
+                9.2 Structural Directives - To change DOM structure
+
+                    9.2.1 ngIf - syntanx: *ngIf="condition"
+
+                    9.2.2 ngFor - syntanx" *ngFor="let iterator of array-name"
+
+                9.3 Attribute Directives - to apply set of style to html
+
+                    9.3.1 Predefined - eg: ngClass
+
+                    9.3.2 Userdefined
+
+            10. Local Storage - to permanently store data in browser
+
+                10.1 setItem()
+
+                10.2 getItem()
+
+                10.3 removeItem()
+
+            11. Angular Pipes: to convert the data format
+                    syntanx: expression | pipe operator [ : pipe Arguments]
+
+            12. Animation
+
+            13. Parent-child Communication
+
+                13.1 Parent to child : Input decorator
+
+                13.2 child to Parent : Output decorator
+
+            14. Event emitter - to generate userdefined events
+
+                14.1 emit() - to occur the event
+
+            15. CLient - SErver Integration
+
+                15.1 API - HttpClient
+
+            16. Asynchronous Function resolving - RxJS
+
+                16.1 Observable - resolved state - .subscribe()
+
+

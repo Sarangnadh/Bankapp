@@ -1,0 +1,20 @@
+table,tr,th{
+    border: 2px white solid;
+    padding: 10px;
+    margin-left: 545px;
+    margin-right: auto;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+    color: white;
+    padding-top: 2rem ;
+}
+
+/* table,tr,th{
+    margin: auto;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+} */
